@@ -23,10 +23,8 @@ import Sidebar from "../../components/Sidebar";
 import Link from "next/link";
 import { useUsers } from "../../services/hooks/useUsers";
 
-
-
 export default function UserList() {
-  const { data, isLoading, isFetching, error } = useUsers()
+  const { data, isLoading, isFetching, error } = useUsers();
 
   const isWideVersion = useBreakpointValue({
     base: false,
@@ -114,7 +112,11 @@ export default function UserList() {
                   })}
                 </Tbody>
               </Table>
-              <Pagination />
+              <Pagination
+                totalCountOfRegisters={200}
+                currentPage={4}
+                onPageChange={() => {}}
+              />
             </>
           )}
         </Box>
