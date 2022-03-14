@@ -94,7 +94,7 @@ console.log(page)
                         </Td>
                         <Td>
                           <Box>
-                            <<Text fontWeight="bold">{user.name}</Text>>
+                            <Text fontWeight="bold">{user.name}</Text>
                             <Text fontSize="sm" color="gray.300">
                               {user.email}
                             </Text>
